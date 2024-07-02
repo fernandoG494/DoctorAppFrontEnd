@@ -1,10 +1,10 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import { Login } from '../interfaces/login';
 import { UserService } from '../services/user.service';
 import { SharedService } from '../../shared/shared.service';
-import { Login } from '../interfaces/login';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
