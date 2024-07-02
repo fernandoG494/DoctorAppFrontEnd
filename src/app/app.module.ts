@@ -12,7 +12,11 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [provideClientHydration(), provideHttpClient(withFetch()), provideAnimationsAsync()],
+  providers: [
+    provideClientHydration(),
+    provideHttpClient(withFetch()),
+    provideAnimationsAsync(),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
