@@ -5,10 +5,11 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { LayoutComponent } from './layout/layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialModule } from '../material/material.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [LayoutComponent, DashboardComponent],
-  imports: [CommonModule, MaterialModule],
+  imports: [CommonModule, MaterialModule, AppRoutingModule],
   exports: [
     ReactiveFormsModule,
     FormsModule,
